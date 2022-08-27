@@ -1,0 +1,47 @@
+.modal {
+  width: 50%;
+  background: white;
+
+  &__title {
+    font-weight: 300;
+    line-height: 4.219rem;
+    font-size: 3.6rem;
+    padding: 4rem 0 4rem 4rem;
+  }
+
+  &__children {
+    padding: 0 2rem;
+  }
+
+  &__buttons-group {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__cancel,
+  &__save {
+    padding: 1rem 4rem;
+    color: black;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    border: 0.2rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    transition: all 0.5s ease-in;
+
+    &:hover {
+      background: black;
+      color: white;
+      border-color: black;
+    }
+  }
+
+  &__save {
+    margin-right: 4rem;
+    background: #C5E9FFB8;
+    border-color: #C5E9FFB8;
+  }
+}

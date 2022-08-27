@@ -1,0 +1,20 @@
+.nav__title-box {
+  text-align: center;
+  width: 100px;
+  border: 1px solid black;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.nav__title-current-box {
+  text-align: center;
+  width: 100px;
+  border: 1px solid black;
+  font-size: 24px;
+  background-color: #45BEFA;
+  border-radius: 5px;
+
+  p {
+    color: white;
+  }
+}

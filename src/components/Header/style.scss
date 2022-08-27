@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  background-color: #F9F9F9;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 10px
+  }
+}
