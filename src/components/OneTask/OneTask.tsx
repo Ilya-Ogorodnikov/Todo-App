@@ -30,7 +30,10 @@ const OneTask: FC<{ task: ITask }> = ({ task }) => {
         <div className="one-task__box-content">
           {
             task.completed ? (
-              <button className="one-task__button">
+              <button
+                className="one-task__button"
+                onClick={() => deleteTask(task.id)}
+              >
                 Удалить
               </button>
             ) : (

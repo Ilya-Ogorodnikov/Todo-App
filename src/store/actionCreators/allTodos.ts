@@ -1,8 +1,8 @@
 import { Dispatch } from 'redux';
 import axios from 'axios'
 import { ITask } from '../../models';
-import { AllTodosActionTypes, IAllTodosAction } from '../reducers/allTodosReducer';
 import { getTodos } from '../../services/todos-service';
+import { AllTodosActionTypes, IAllTodosAction } from '../../models/todos';
 
 const fetchAllTodos = (opened?: boolean, completed?: boolean) => async (dispatch: Dispatch<IAllTodosAction>) => {
   try {
@@ -48,6 +48,8 @@ const completedOneTask = (task: ITask) => (dispatch: Dispatch<IAllTodosAction>) 
 };
 
 const deleteTask = (id: number) => (dispatch: Dispatch<IAllTodosAction>) => {
+  console.log(id);
+  
   dispatch({
     type: AllTodosActionTypes.DELETE_ONE_TODO,
     payload: id
