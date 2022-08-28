@@ -1,11 +1,10 @@
 import { FC, useState } from 'react';
-import { EditTask } from '..';
+import { EditTask, TaskInfo } from '..';
 import { useActions } from '../../hooks';
 import { ITask } from '../../models';
-import { TaskInfo } from '..';
 import './style.scss';
 
-const OneTask:FC<{ task: ITask }> = ({ task }) => {
+const OneTask: FC<{ task: ITask }> = ({ task }) => {
   const { completedOneTask, deleteTask } = useActions();
   const [isOpenModalInfo, setIsOpenModalInfo] = useState(false);
   const [isOpenModalEdit, setIsOpenModalEdit] = useState(false);

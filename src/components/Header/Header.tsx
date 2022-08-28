@@ -3,7 +3,7 @@ import { NavButton } from '..';
 import { navLinks } from '../../constants';
 import './style.scss'
 
-const Header:FC = () => (
+const Header: FC = () => (
   <header className="header">
     <div className="header__title">
       <h1>Todo App</h1>

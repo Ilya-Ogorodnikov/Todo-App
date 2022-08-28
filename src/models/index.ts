@@ -3,7 +3,7 @@ export interface ITask {
   id: number,
   title: string,
   completed: boolean
-}
+};
 
 export interface IEditTaskProps {
   task: ITask,
@@ -13,7 +13,7 @@ export interface IEditTaskProps {
 export interface ITaskInfoProps {
   task: ITask,
   setOpenModal: (data: boolean) => void
-}
+};
 
 export interface IModalWindowProps {
   children: React.ReactNode,
@@ -21,12 +21,12 @@ export interface IModalWindowProps {
   title: string,
   titleForButtonChange?: string
   modifyTask?: () => void
-}
+};
 
 export interface INavButtonProps {
   title: string,
   path: string
-}
+};
 
 export interface ITaskWrapperProps {
   children?: React.ReactNode

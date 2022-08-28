@@ -13,7 +13,7 @@ const AllTasks: FC = () => {
 
   useEffect(() => {
     fetchAllTodos();
-  }, [])
+  }, []);
 
   if (isLoading) {
     return (
