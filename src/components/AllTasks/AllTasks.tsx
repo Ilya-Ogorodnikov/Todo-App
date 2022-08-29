@@ -5,7 +5,6 @@ import {
   TasksWrapper
 } from '..';
 import { useActions, useTypedSelector } from '../../hooks';
-import './style.scss';
 
 const AllTasks: FC = () => {
   const { allTodos, isLoading } = useTypedSelector(state => state.allTodos);
